@@ -17,3 +17,4 @@ namespace GameOfLife
         }
     }
 }
+// TODO создать класс gameEngine и вынести туда часть кода
