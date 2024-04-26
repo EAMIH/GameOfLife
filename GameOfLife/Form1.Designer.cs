@@ -81,7 +81,7 @@
             this.bStop.TabIndex = 5;
             this.bStop.Text = "Stop";
             this.bStop.UseVisualStyleBackColor = true;
-            this.bStop.Click += new System.EventHandler(this.bStop_Click);
+            this.bStop.Click += new System.EventHandler(this.bStopClick);
             // 
             // bStart
             // 
@@ -92,7 +92,7 @@
             this.bStart.TabIndex = 4;
             this.bStart.Text = "Start";
             this.bStart.UseVisualStyleBackColor = true;
-            this.bStart.Click += new System.EventHandler(this.bStart_Click);
+            this.bStart.Click += new System.EventHandler(this.bStartClick);
             // 
             // nudDensity
             // 
@@ -112,7 +112,7 @@
             this.nudDensity.TabIndex = 3;
             this.nudDensity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.nudDensity.Value = new decimal(new int[] {
-            2,
+            25,
             0,
             0,
             0});
@@ -173,7 +173,7 @@
             // timer1
             // 
             this.timer1.Interval = 40;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer1.Tick += new System.EventHandler(this.timer1Tick);
             // 
             // Form1
             // 
@@ -183,9 +183,8 @@
             this.ClientSize = new System.Drawing.Size(1401, 533);
             this.Controls.Add(this.splitContainer1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "GameOfLife";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
